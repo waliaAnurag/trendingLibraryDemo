@@ -1,0 +1,36 @@
+.bookList{
+    height: 100px;
+    text-align: left;
+    border-radius: 5px;
+}
+.headingStyle{
+    color: black;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.textHolder{
+    padding-left: 10px;
+}
+
+.listHolder{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 20px 0px 40px;
+}
+.bookList:hover{
+    .headingStyle{
+        color: aliceblue;
+    }
+    .imageHolder{
+        height: 80px;
+    }
+    .textHolder{
+        margin-bottom: 20px;
+    }
+    cursor: pointer;
+    background-color: #309d74;
+    color: aliceblue;
+    
+}

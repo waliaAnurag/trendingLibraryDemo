@@ -1,0 +1,23 @@
+.dashboardLayoutContainer{
+    display:flex;
+    flex-direction: row;
+    padding: 50px 10px 10px 30px;
+    gap: 80px;
+}
+
+.listStyles{
+    list-style: none !important;
+}
+.navStyles{
+    gap: 10px;
+}
+.listItemStyles{
+    margin-bottom: 90px;
+}
+
+.mainContainer{
+    width : 100%;
+    background-color: rgb(243,244,246);
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+body{
+  background-color: #e8e7e3;
+  color : #000;
+  margin:0px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  overflow-x: hidden;
+  
+}
+
+h1{
+  color : #309d74
+}
+
+header{
+  background-color: #e8e7e3;
+  padding: 4px;
+  box-shadow: 0 4px 4px -2px gray;
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+footer{
+  background-color: #e8e7e3;
+  padding: 4px;
+  box-shadow: 0 4px 4px 2px gray;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  position: sticky;
+  bottom: 0;
+}
+
+textarea{
+  outline : none;
+  height: 40px;
+  width: 100%; 
+}
+li{
+  list-style: none;
+
+  }

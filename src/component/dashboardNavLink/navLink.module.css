@@ -1,0 +1,15 @@
+.textStyles{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;;
+}
+
+.selectedText{
+    color: black;
+}
+
+.unselectedText{
+    color: grey;
+}

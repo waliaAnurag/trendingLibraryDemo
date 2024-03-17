@@ -1,0 +1,57 @@
+.mainContent {
+    height: 80%;
+    background-color: #e8e7e4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.overLayText{
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    border-radius: 15px;
+    width: 90%;
+    padding: 15px;
+    padding-left: 80px;
+    color: #b9b3b1;
+}
+.overLayHeader{
+    position: absolute;
+    top: 20vh;
+    
+}
+.newBtnStyles{
+   background-color: #309d74;
+   
+}
+.loginBtnColor{
+    background-color: #e8e7e3;
+    color : #309d74 !important;
+}
+.headingText{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subheadingText{
+     color: #b9b3b1;
+}
+
+.btn{
+    color: white;
+    font-weight: 600;
+    height: 40px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.rightSection {
+    flex: 1
+}
+
+.leftSection {
+    flex: 1
+}
