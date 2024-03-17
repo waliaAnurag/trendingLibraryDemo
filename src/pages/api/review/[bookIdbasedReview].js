@@ -1,5 +1,5 @@
 const { connectDataBase,insertDocument,getAllDocuments } = require("@/helpers/db-utils");
-import { getToken } from 'next-auth/jwt';
+// import { getToken } from 'next-auth/jwt';
 
 async function handler(req,res){
 

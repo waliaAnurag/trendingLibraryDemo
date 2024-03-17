@@ -1,5 +1,5 @@
 import { hashPassword } from "@/helpers/auth";
-const { connectDataBase} = require("@/helpers/db-utils");
+import { connectDataBase} from "@/helpers/db-utils";
 
 
 async function handler(req, res) {
@@ -20,7 +20,7 @@ async function handler(req, res) {
           
         } catch (error) {
            
-            res.status(500).json({ message: 'error occurred while connecting with db', error: error });
+            res.status(500).json({ message: 'error occurred while connecting with db', error: client });
 
             return
         }
