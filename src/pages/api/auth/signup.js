@@ -16,14 +16,14 @@ async function handler(req, res) {
             return;
         }
         try {
-            client = await MongoClient.connect(process.env.MONGO_DB_URL)
+            client = await MongoClient.connect(process.env.MONGODB_URI)
                 console.log(client,"this is form api")
                 if(client){
                     res.status(200).json({msg:"Client exists",cl:client})
                 }else{
                     res.status(500).json({message:"client doesnt exists",cli:client})
                 }
-    return client;
+    
           
         } catch (error) {
            
