@@ -1,6 +1,6 @@
 import { hashPassword } from "@/helpers/auth";
 import { connectDataBase} from "@/helpers/db-utils";
-import { MongoClient } from 'mongodb';
+                                                        
 
 async function handler(req, res) {
     
@@ -16,18 +16,17 @@ async function handler(req, res) {
             return;
         }
         try {
-            client = await MongoClient.connect(process.env.MONGODB_URI)
-                console.log(client,"this is form api")
-                if(client){
-                    res.status(200).json({msg:"Client exists",cl:client})
-                }else{
-                    res.status(500).json({message:"client doesnt exists",cli:client})
-                }
-    
+            client = await connectDataBase();
+            if(client){
+                res.status(200).json({message:"client is defined", cli:client})
+            }else{
+                res.status(500).json({message:"client is undefined", cli:client})
+            }
+        
           
         } catch (error) {
            
-            res.status(500).json({ message: 'error occurred while connecting with db', error: client });
+            res.status(500).json({ message: 'exception while connecting with db', infor: client });
 
             return
         }
