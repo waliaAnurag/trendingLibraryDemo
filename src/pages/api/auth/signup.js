@@ -17,9 +17,7 @@ async function handler(req, res) {
         }
         try {
             client = await connectDataBase();
-            if(client){
-                res.status(200).json({message:"client is defined"})
-            }else{
+            if(!client){
                 res.status(500).json({message:"client is undefined"})
             }
         
