@@ -41,7 +41,7 @@ async function handler(req,res){
         try{
           //Insertion
             await insertDocument(client,"bookReview",requestObject);
-            client.close();
+           
         }catch(error){
             res.status(500).json({message:'Insert into DB failed !',error:error});
             client.close();
