@@ -2,7 +2,7 @@ import { verifyPassword } from "@/helpers/auth";
 import { connectDataBase } from "@/helpers/db-utils";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials"
-//so NextAuth returns ann api handler function and in NextAuth function we are passing our configuration which helps us to configure next auth behvaiour
+//so NextAuth returns an api handler function and in NextAuth function we are passing our configuration which helps us to configure next auth behvaiour
 
 export default NextAuth({
     session:{
