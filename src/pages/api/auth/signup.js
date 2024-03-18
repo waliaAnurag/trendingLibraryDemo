@@ -18,15 +18,15 @@ async function handler(req, res) {
         try {
             client = await connectDataBase();
             if(client){
-                res.status(200).json({message:"client is defined", cli:client})
+                res.status(200).json({message:"client is defined"})
             }else{
-                res.status(500).json({message:"client is undefined", cli:client})
+                res.status(500).json({message:"client is undefined"})
             }
         
           
         } catch (error) {
            
-            res.status(500).json({ message: 'exception while connecting with db', infor: client });
+            res.status(500).json({ message: 'exception while connecting with db' });
 
             return
         }
